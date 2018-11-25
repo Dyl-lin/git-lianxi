@@ -1,0 +1,25 @@
+﻿pwd：显示当前目录
+ls -ah ：显示目录内容
+git init：把当前目录变为git可以管理的仓库
+(1)添加文件
+	git add file  把文件添加到仓库（暂存区）
+	git commit -m“说明”   把文件提交到仓库
+(2)查看文件修改
+	git status 查看仓库当前的状态
+	git diff 查看修改的内容
+	git diff HEAD -- file 查看相应文件的修改
+(3)版本回退
+	git log 查看历史纪录（q返回）
+	git log --pretty=oneline 查看简略历史
+	git reflog 记录每次的命令（可用来查看commit id）
+	git reset --hard HEAD^  返回上一个版本，（HEAD^^上上个版本）（HEAD~100往上100个版本）
+	git reset --hard （commit id） 返回对应的版本
+(4)撤销修改
+	git checkout -- file 撤销对应文件未加入暂存区的修改	
+	git reset HEAD file 把对应文件在暂存区的修改撤销
+(5)删除文件
+	rm file 从工作区删除对应文件（或手动删除）
+	git rm file  对应于（git add） 
+	git commit 提交命令
+
+ssh-keygen -t ras -C “邮箱”
