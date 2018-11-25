@@ -22,4 +22,12 @@ git init：把当前目录变为git可以管理的仓库
 	git rm file  对应于（git add） 
 	git commit 提交命令
 
-ssh-keygen -t ras -C “邮箱”
+远程github仓库连接
+1.创建SSH key ：  ssh-keygen -t rsa -C "邮箱"
+	在.ssh文件生成id_rsa(私钥)和id_rsa.pub(公钥)
+	将公钥添加到github账号
+2.在github中创建一个新的仓库
+	在本地仓库下：git remote add origin https://github.com/用户名/远程仓库名
+3.推送内容到远程仓库: （第一次）git push -u origin master
+		    git push origin master
+4.从远程仓库复制:
