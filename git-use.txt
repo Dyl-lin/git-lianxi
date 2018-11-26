@@ -32,7 +32,7 @@ git init：把当前目录变为git可以管理的仓库
 		    git push origin master
 4.从远程仓库复制:
 
-
+555
 666
 
 
