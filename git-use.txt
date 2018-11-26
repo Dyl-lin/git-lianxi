@@ -31,3 +31,5 @@ git init：把当前目录变为git可以管理的仓库
 3.推送内容到远程仓库: （第一次）git push -u origin master
 		    git push origin master
 4.从远程仓库复制:
+
+666
